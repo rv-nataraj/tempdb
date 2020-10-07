@@ -12,7 +12,8 @@ then
 	mkdir ~/temp/${sc[1]}
 	mkdir ~/temp/${sc[1]}/config
 	mkdir ~/temp/${sc[1]}/data
-
+	cp -u ~/deployment/mdb.cnf ~/temp/${sc[1]}/config/mdb.cnf
+	#rm ~/temp/${sc[1]}/config/mdb.cnf
 	
 
 	docker kill ${sc[1]}
